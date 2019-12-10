@@ -1,0 +1,124 @@
+<!-- Jobs section starts -->
+<div class="hero">
+    <div class="jobs jobs-header-v1">
+        <div class="container">
+            <h2>Jobs</h2>
+            <hr>
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="job-search-form">
+                            <div class="row">
+                                <div class="col-md-15 col-sm-6 ipad-align">
+                                    <div class="job-title pull-left">
+                                        <span class="select-text">Search :</span>
+                                        <input type="text" id="job_title" placeholder="Job Title Keyword" />
+                                    </div>
+                                </div>
+                                <div class="col-md-15 col-sm-6 ipad-align">
+                                    <div class="job-title pull-left">
+                                        <span class="select-text">Min Hourly Rate:</span>
+                                        <input type="text" id="hourly_rate" placeholder="Enter rate" />
+                                    </div>
+                                </div>
+                                <div class="col-md-15 col-sm-6 ipad-align">
+                                    <span class="select-text">City:</span>
+                                    <div class="select-container sel-cont-last pull-left">
+                                        <select id="select-box-3">
+                                            <option selected>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-15 col-sm-6">
+                                    <span class="select-text">State:</span>
+                                    <div class="select-container sel-cont-last pull-left">
+                                        <select id="select-box-6">
+                                            <option selected>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-15 col-sm-6">
+                                    <span class="select-text">Type:</span>
+                                    <div class="select-container sel-cont-last pull-left">
+                                        <select id="select-box-4">
+                                            <option selected>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-15 col-sm-6">
+                                    <span class="select-text">Category:</span>
+                                    <div class="select-container pull-left">
+                                        <select id="select-box-5">
+                                            <option selected>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                            <option>Any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="clear"></div>
+            <div class="table-container">
+                <div id="parent">
+                    <table id="fixTable" class="table job-search-table">
+                        <thead>
+                            <tr>
+                                <th>JOB TITLE</th>
+                                <th style='display:none;'>low rate</th>
+                                <th style='display:none;'>high rate</th>
+                                <th>HOURLY RATE</th>
+                                <th>CITY</th>
+                                <th>STATE</th>
+                                <th>JOB TYPE</th>
+                                <th>JOB ID</th>
+                                <th>DURATION</th>
+                                <th>CATEGORY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Date Engineer</td>
+                                <td style='display:none;'>12</td>
+                                <td style='display:none;'>122</td>
+                                <td>1212</td>
+                                <td>Chicago</td>
+                                <td>Illinois</td>
+                                <td>Contract</td>
+                                <td>5454</td>
+                                <td>3 to 5</td>
+                                <td>Information Technology</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+    <!-- Jobs section ends -->
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*fixed header*/
+        $("#fixTable").tableHeadFixer();
+        /*select box*/
+        $("#select-box-5").selectmenu();
+        $("#select-box-2").selectmenu();
+        $("#select-box-3").selectmenu();
+        $("#select-box-4").selectmenu();
+        $("#select-box-6").selectmenu();
+    });
+</script>

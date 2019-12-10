@@ -1,13 +1,117 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>JobsApp</title>
+  <title>PeopleCaddie - Marketing</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   <!-- Bootstrap core CSS -->
+   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+   <link href="assets/css//ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+   <link href="assets/css//custom-style.css" rel="stylesheet">
+   <link href="assets/css/style.css" rel="stylesheet">
+ 
+ <!-- Google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+   
+   <!-- Fontawsome -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   <script src="js/ie-emulation-modes-warning.js"></script>
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
 </head>
+
 <body>
+
   <app-root></app-root>
+
+  <!-- FOOTER -->
+  <div class="footer-custom">
+    <div class="container">
+      <div class="row">
+
+        <!-- left -->
+        <div class="col-md-3 col-sm-3 hidden-xs">
+          <img src="assets/img/logo_footer.png" alt="" />
+        </div>
+        <!-- END left -->
+
+        <!-- right -->
+        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+          <p>© 2019 PeopleCaddie. All rights reserved.</p>
+          <ul class="list-inline">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+
+          <ul class="footer-social list-inline">
+            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <!-- END right -->
+
+      </div>
+    </div>
+  </div>
+  <!-- END footer -->
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script> 
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Logo slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  
+  <script>
+
+  var scroll = new SmoothScroll('a[href*="#"]');
+
+	$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
 </body>
+
 </html>
